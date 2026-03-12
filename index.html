@@ -460,10 +460,9 @@
 
   /* ANIMATIONS */
   .fade-up {
-    opacity: 0; transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 1;
+    transform: translateY(0);
   }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
 
   /* RESPONSIVE */
   @media (max-width: 768px) {
@@ -509,8 +508,9 @@
       </h1>
       <p class="hero-desc">
         Building <strong>production-grade cross-platform apps</strong> for Android & iOS.
-        ~2 years of professional experience shipping <strong>5 live apps</strong> across
-        real estate, agriculture, B2B & fintech — with a 30% performance improvement track record.
+        ~2 years of professional experience shipping <strong>7 live apps</strong> across
+        real estate, agriculture, B2B & fintech — with a 30% performance improvement track record
+        and <strong>Razorpay payment integration</strong> across multiple production apps.
         <br><br>OCI Certified in <strong>Generative AI · Data Science · AI Foundations</strong>.
       </p>
       <div class="hero-btns">
@@ -524,7 +524,7 @@
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num">5<span>+</span></div>
+          <div class="stat-num">7<span>+</span></div>
           <div class="stat-label">Production Apps</div>
         </div>
         <div class="stat">
@@ -613,6 +613,16 @@
           <span class="tag green">Webhooks</span>
         </div>
       </div>
+      <div class="skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(251,191,36,0.1);">💳</div>
+        <h3>Payment Integration</h3>
+        <div class="skill-tags">
+          <span class="tag orange">Razorpay</span>
+          <span class="tag orange">Wallet Systems</span>
+          <span class="tag orange">Subscriptions</span>
+          <span class="tag orange">Transactions</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -632,7 +642,8 @@
         </div>
         <div class="exp-role">Flutter Developer · Pune, India</div>
         <ul class="exp-points">
-          <li>Engineered and maintained <strong>3 production Flutter apps</strong> — PlottingWala, Awjar Bank, Marketyard — across real estate, agriculture, and B2B domains</li>
+          <li>Engineered and maintained <strong>3 production Flutter apps</strong> — PlottingWala, Awjar Bank, VyapariApp — across real estate, agriculture, and B2B domains</li>
+          <li>Integrated <strong>Razorpay payment gateway</strong> across multiple production apps for booking payments, trade transactions, and wallet management</li>
           <li>Integrated <strong>Google Maps SDK</strong> for interactive map-based property browsing and location-aware booking flows</li>
           <li>Achieved <strong>30% reduction in app load time</strong> through lazy loading, caching, and optimized state management (GetX + Provider)</li>
           <li>Deployed multiple apps to <strong>Google Play Store</strong> with zero critical post-release incidents</li>
@@ -646,7 +657,7 @@
         </div>
         <div class="exp-role">Flutter Developer · Pune, India</div>
         <ul class="exp-points">
-          <li>Developed <strong>cross-platform Flutter apps</strong> — DMFU Mess App and Attendsync — for Android and iOS</li>
+          <li>Developed <strong>2 Flutter apps for DMFU</strong> (User + Mess Owner) — mess discovery, meal subscriptions, attendance tracking, digital wallet, and Razorpay payment gateway integration</li>
           <li>Built <strong>real-time attendance tracking</strong> with Firebase sync, reducing manual tracking overhead significantly</li>
           <li>Implemented dynamic <strong>menu management with push notifications</strong>, increasing daily active user engagement</li>
           <li>Executed full <strong>Play Store deployment lifecycle</strong> including APK signing, staged rollouts, and production issue resolution</li>
@@ -670,9 +681,9 @@
           <span class="project-badge badge-prod">Production</span>
         </div>
         <h3>PlottingWala</h3>
-        <p>Real estate platform with interactive map-based property browsing using Google Maps SDK. Achieved 30% load time reduction through performance optimization and smart caching.</p>
+        <p>Real estate platform with interactive map-based property browsing using Google Maps SDK. Integrated <strong style="color:var(--orange)">Razorpay</strong> for secure booking payments. Achieved 30% load time reduction through performance optimization, lazy loading, and smart caching.</p>
         <div class="project-tags">
-          <span class="tag">Flutter</span><span class="tag">Google Maps</span><span class="tag green">GetX</span><span class="tag orange">REST API</span>
+          <span class="tag">Flutter</span><span class="tag">Google Maps</span><span class="tag green">GetX</span><span class="tag orange">REST API</span><span class="tag orange">Razorpay</span>
         </div>
       </div>
 
@@ -681,10 +692,10 @@
           <div class="project-icon">🌾</div>
           <span class="project-badge badge-prod">Production</span>
         </div>
-        <h3>Marketyard</h3>
-        <p>B2B agriculture marketplace with complex business workflows serving diverse user bases. Full Flutter cross-platform app with real-time data and role-based access.</p>
+        <h3>VyapariApp</h3>
+        <p>B2B agriculture marketplace connecting farmers and traders with complex business workflows. Integrated Razorpay for trade payments and wallet management. Full Flutter cross-platform app with real-time data, role-based access, and Play Store deployment.</p>
         <div class="project-tags">
-          <span class="tag">Flutter</span><span class="tag green">GetX</span><span class="tag orange">Firebase</span><span class="tag">REST API</span>
+          <span class="tag">Flutter</span><span class="tag green">GetX</span><span class="tag orange">Firebase</span><span class="tag">REST API</span><span class="tag orange">Razorpay</span>
         </div>
       </div>
 
@@ -709,6 +720,18 @@
         <p>Real-time attendance tracking system with Firebase data sync. Eliminated manual tracking overhead and delivered consistent performance across all device types.</p>
         <div class="project-tags">
           <span class="tag">Flutter</span><span class="tag orange">Firebase</span><span class="tag orange">Realtime DB</span><span class="tag green">GetX</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-top">
+          <div class="project-icon">🍱</div>
+          <span class="project-badge badge-prod">Production · 2 Apps</span>
+        </div>
+        <h3>DMFU — Daily Mess For U</h3>
+        <p>Built two separate Flutter apps — one for users, one for mess owners — to digitize mess management. Features include mess discovery, meal subscriptions, real-time attendance tracking, digital wallet, and Razorpay payment integration. Consumed Node.js REST APIs for all backend operations.</p>
+        <div class="project-tags">
+          <span class="tag">Flutter</span><span class="tag green">GetX</span><span class="tag orange">Razorpay</span><span class="tag orange">REST API</span><span class="tag">Provider</span><span class="tag orange">Firebase</span>
         </div>
       </div>
 
@@ -834,17 +857,5 @@
   <p>Built by Palash Pingale · Pune, Maharashtra · Open to Relocation · 15-Day Notice</p>
 </footer>
 
-<script>
-  // Fade-up on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
 </body>
 </html>
